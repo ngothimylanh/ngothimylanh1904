@@ -1,0 +1,29 @@
+import java.sql.*;
+import javax.sql.*;
+public class JDBCDemo  {
+public static void main(String args[]){
+System.out.println("Ket noi CSDL");
+try{
+Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+String url="jdbc:odbc:DATA";
+Connection con=DriverManager.getConnection(url,"","");
+Statement stmt = con.createStatement ();
+String sql21="INSERT INTO Table1(Id,Name,Address,Total) VALUES ('5','HaoMinh','GiaLai','60')";
+stmt.executeUpdate(sql21);
+String sql22="UPDATE Table1 SET Total=Total + Total * 0,1";	
+stmt.executeUpdate(sql22);
+String sql="SELECT + FROM Talbe1";
+ResultSet rs = stmt.executeQuery(sql);
+while (rs.next()){
+	int id= rs.getInt("Id");
+	String name=rs.getString("Name");
+	String address=rs.getString("Address");
+	double total=rs.getDouble("Total");
+	System.out.print("ID="+id +"Name="+name +"Address="+address + "Total=" + total);
+	System.out.println("\n");
+	}
+    rs.close();
+	stmt.close();
+ }catch (Exception e) {System.out.println("Error" + e);}
+ }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form11</title>
+    <script>
+        function check() {
+            let u= document.f1.username.value;
+            let p = document.f1.password.value;
+            if(u == "") {
+                alert("Vui lòng nhập tên!");
+                return false;
+            }
+            if(p == "") {
+                alert("Vui lòng nhập mật khẩu!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#ffccff">
+<form name = "f1" action = "" method = "">
+    <center>
+        <p>Login</p>
+        Username <input type = "text" name = "username" onblur= "check()"/>
+        <br><br>
+        Password <input type = "text" name = "password" onblur= "check()"/>
+        <br><br>
+        <input type = "submit" name = "submit" value = "OK"/>
+        <input type = "reset" name = "reset" value = "Reset"/>
+    </center>
+</form>
+</body>
+</html>

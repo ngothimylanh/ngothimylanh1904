@@ -1,0 +1,14 @@
+<Script Language="JavaScript">
+	function chaoban()
+	{
+			var st=document.f1.t1.value
+			document.bgColor=st
+
+
+		</Script>
+	<Body>
+	    <Form name=f1 action=""method="post/get">
+			<input type=text name=t1>
+			<input type=button name=b1 value="OK"' onClick="chaoban()">
+		</Form>
+</Body>

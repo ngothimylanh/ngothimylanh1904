@@ -1,0 +1,24 @@
+<Script language="JavaScript">
+          function chuhoa()
+	      {
+	        var bien=document.f1.t1.value
+			 var kq=''
+			for (var i=0;i<bien.length;i++)
+			{
+				if (bien[i]==bien[i].toUpperCase())
+				{
+					kq+=bien[i].toLowerCase()
+				}
+	            else
+	            {
+					kq+=bien[i].toUpperCase()
+	            }
+			}
+		    document.f1.t2.value=kq
+	      }
+	 </Script>
+<BODY "onLoad="document.f1.t1.focus()">
+     <Form name=f1 action="" method="">
+          <input type=text name=t1 value="" onBlur="chuhoa()"> 
+	      <input type=text name=t2 value="" >
+</BODY>

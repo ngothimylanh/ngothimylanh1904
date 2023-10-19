@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "142916705071",
+    "project_id": "cook-pad-42759",
+    "storage_bucket": "cook-pad-42759.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142916705071:android:019d2e9e10e0d5d4ff1fda",
+        "android_client_info": {
+          "package_name": "com.example.nauan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142916705071-hpnk48tk5dcb9qn2rrtq70usj71v6tvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nauan",
+            "certificate_hash": "0f8e985aae19a829d581f3fbb9cbcc6a0015a46e"
+          }
+        },
+        {
+          "client_id": "142916705071-jfga7779e17i22jt002imjr0dnn25h2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2A5FIbZMkspM8nWEIlnEzN9v-Blad9fQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142916705071-jfga7779e17i22jt002imjr0dnn25h2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

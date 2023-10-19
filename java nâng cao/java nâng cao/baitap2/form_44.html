@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form44</title>
+    <Script Language="JavaScript">
+        function chimuc()
+        {
+            var st=document.f1.t1.value
+            document.f1.s1.selectedIndex=st
+        }
+    </Script>
+</head>
+<body onLoad="document.f1.t1.focus()">
+<form name=f1 action=""method="">
+    <select name=s1>
+        <option> index O </option>
+        <option> index 1 </option>
+        <option> index 2 </option>
+        <option> index 3 </option>
+    </select>
+    <input type=text name=t1>
+    <input type=button name=b1 value=OK onClick="chimuc()">
+</form>
+</body>
+</html>

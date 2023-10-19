@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/foodmng"
+            android:icon="@drawable/foodmng"
+            android:title="Food Manager"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/usermng"
+            android:icon="@drawable/usermng"
+            android:title="User Manager"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/logoutad"
+            android:icon="@drawable/logoutad"
+            android:title="Log out"
+            app:showAsAction="ifRoom" />
+    </group>
+</menu>

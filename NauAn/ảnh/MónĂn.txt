@@ -1,0 +1,179 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "userInfo": {
+      ".indexOn": "email"
+    }
+  }
+}
+
+- Món chính:
++ Sườn xào chua ngọt
++ Gỏi gà măng cụt
++ Gà xé trộn
++ Cánh gà chiên nước mắm
++ Cá thu sốt cà chua 
++ Cua sốt me 
++ Salad trộn
++ Canh chua cá lóc
++ Gà ngũ vị
++ Thịt kho tàu
+
+- Món nước:
++ Lẩu hải sản
++ Mỳ quảng
++ Bún bò huế
++ Mì cay
++ Bún chả cá
+
+- Thức ăn nhanh
++ Chân gà sả tắc
++ Gà rán
++ Nem chua rán
++ Pizza
+
+- Nước uống
++ Trà sữa
++ Sữa tươi trân châu đường đen
++ Bingsu sicula
++ Trà trái cây nhiệt đới
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    tools:layout_editor_absoluteX="-11dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/editpf_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CHỈNH SỬA THÔNG TIN"
+        android:textColor="@color/maincolor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/password_editpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toEndOf="@+id/password_tv_editpf"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_editpf" />
+
+    <TextView
+        android:id="@+id/username_tv_editpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:text="tên người dùng:"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpf_id" />
+
+    <TextView
+        android:id="@+id/fullname_tv_editpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="họ và tên           :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_tv_editpf" />
+
+    <EditText
+        android:id="@+id/username_editpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/username_tv_editpf"
+        app:layout_constraintTop_toBottomOf="@+id/editpf_id" />
+
+    <TextView
+        android:id="@+id/password_tv_editpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="mật khẩu           :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_tv_editpf" />
+
+    <EditText
+        android:id="@+id/fullname_editpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toEndOf="@+id/fullname_tv_editpf"
+        app:layout_constraintTop_toBottomOf="@+id/username_editpf" />
+
+    <Button
+        android:id="@+id/editpf_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/buttoncolor"
+        android:text="Cập nhật"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_tv_editpf"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/nope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="(Không thể thay đổi email)"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/username_editpf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editpf_id"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <ImageView
+        android:id="@+id/help_email"
+        android:layout_width="22dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/username_editpf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toEndOf="@+id/nope"
+        app:layout_constraintTop_toBottomOf="@+id/editpf_id"
+        app:layout_constraintVertical_bias="0.351"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
