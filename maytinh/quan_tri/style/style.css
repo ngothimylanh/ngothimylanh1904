@@ -1,0 +1,120 @@
+body{
+	width: 96%;
+	margin: auto;
+	font-size: 18px;
+	font-family: tahoma;
+}
+a{
+	text-decoration: none; 
+	color: #ec522b;
+}
+label{
+	font-weight: bold;
+}
+select{
+	width: 180px;
+	height: 36px;
+	border-radius: 10px;
+	border: 0.1px solid silver;
+}
+input[type="text"], input[type="password"]{
+	width: 180px;
+	height: 36px;
+	border-radius: 10px;
+	border: 0.1px solid silver;
+	padding-left: 10px;
+}
+input[type="submit"]{
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	background-color: #ec522b;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+}
+
+.logo{
+	width: 200px; 
+	height: 170px; 
+	 margin-top: -15px; 
+	 margin-left: 130px; 
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="search"] {
+    /* flex: 5; */
+    width: 500px;
+    height: 35px;
+    padding-left: 10px;
+	margin-left: 230px;
+    border-radius: 5px; /* Độ cong của viền bo */
+}
+
+.search button {
+    color: white;
+    width: 80px;
+    height: 30px;
+    background-color: #ec522b;
+    border: none;
+    margin-left: -86px;
+    border-radius: 5px; /* Độ cong của viền bo */
+}
+
+
+
+
+.navbar{
+	width: 100%;
+	height: 40px;
+	margin-top: 50px;
+	background-color: #ec522b;
+}
+.navbar ul{
+	list-style: none;
+}
+.navbar ul li{
+	height: 40px;
+	margin-left: 65px;
+	line-height: 40px;
+	float: left;
+	background-color: #ec522b;
+}
+.navbar ul li a{
+	font-size: 20px;
+	display: block;
+	padding: 0 -10px;
+	color: white;
+	text-decoration: none;
+}
+.navbar ul li a:hover{
+	background-color: #e7a985;
+}
+.content{
+	width: 95%;
+	height: auto;
+	border: 0.5px solid silver;
+	margin: auto;
+	clear: both;
+}
+.content table{
+	width: 93%; 
+	margin-top: 45px;
+	border: silver 0.1px solid; 
+	border-collapse: collapse;
+}
+.content table .title{
+	font-weight: bold;
+}
+.content table td{
+	padding: 5px;
+	border: 0.1px silver solid;
+}
+.content table .right{
+	text-align: right;
+}
+
